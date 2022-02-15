@@ -1,0 +1,10 @@
+nav {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    border-bottom: black 3px;
+}
+
+img, nav {
+    display: flex;
+}
