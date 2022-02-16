@@ -45,8 +45,15 @@ table {
 
 nav {
     display: inline-block;
+    justify-content: center;
+    gap : 4px;
     height: 50px;
-   width: 150px;
+   width: 100%;
+}
+
+.menu-text {
+        font-weight: 550;
+        margin-top : -10px
 }
 
 .logo {
@@ -60,10 +67,37 @@ header {
     box-shadow: black;
 }
 
+.iconify {
+        width: 17px;
+        height: 20px;
+        margin-top : 10px
+}
+#menu {
+    border: none;
+    background-color:none;
+    text-align: center;
+align-items: center;
+}
+.menu-button {
+    display: flex;
+    justify-content: center;
+}
+.menu-text {
+margin-top : none;
+}
+
+.background-img {
+        width: 100%;
+        height: 400px
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+
 ul {
     display: inline-block;
     display: flex;
-    
     font-size: 10px;
 }
 
@@ -106,4 +140,10 @@ li:hover {
 .cart {
     width: 15px;
     height: 15px;
+}
+
+footer {
+    background-color: rgba(104, 93, 93, 0.205) ;
+    height: fit-content;
+    padding: 25px;
 }
