@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url('images/CV(3).png');
+}
 img{
     max-width: 100%;
 }
@@ -22,10 +26,22 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom: .1875rem solid black;
-  height: 2.8125rem;
+  height: 4.375rem;
   position: relative;
+  margin-bottom: 400px;
+  background-color: white;
 }
+.filters-and-title {
+  background-color: white;
+  height: ;
 
+}
+h1{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 5rem;
+}
 .iconify {
   width: 1.0625rem;
   height: 1.25rem;
@@ -36,18 +52,13 @@ header {
   align-items: center;
   border: none;
   background-color: white;
-  /*text-align: center;
-  align-items: center;*/
-  /*margin-right: .1875rem;*/
-  position: absolute;
+  text-align: center;
+  margin-bottom: 1.875rem;
 }
 .menu-button {
   display: flex;
   justify-content: center;
   border-bottom: light 0.0625rem solid;
-}
-.menu-text {
-  /*margin-top: none;*/
 }
 
 .background-img {
@@ -82,40 +93,38 @@ li:hover {
   text-decoration-thickness: 0.125rem;
   cursor: pointer;
 }
-
 .regime {
-  margin-top: 1.0625rem;
   justify-content: center;
   display: flex;
   margin-bottom: 1.25rem;
   flex-wrap: wrap;
-
+  gap: .3125rem;
+  margin-top: 1.125rem;
 }
-
 .preferences {
-  padding: 0.5rem;
+  padding: .625rem;
   display: flex;
   flex-wrap: wrap;
   display: inline-block;
   background-color: black;
-  border-radius: 30%;
+  border-radius: 33%;
   color: white;
-  border: solid 0.125rem;
+  border: transparent;
+  width: fit-content;
+  
 }
-
 .preferences:hover {
   cursor: pointer;
   background-color: rgba(221, 202, 28, 0.877);
 }
-
 .cart {
   width: 0.9375rem;
   height: 0.9375rem;
 }
 
 footer {
-  background-color: rgba(104, 93, 93, 0.205);
-  height: fit-content;
+  background-color: #6BA6AE;
+  height: 6.25rem;
   padding: 1.5625rem;
 }
 
@@ -125,16 +134,16 @@ footer {
 .offer-card4,
 .offer-card5 {
   background-color: white;
-  width: 15.625rem;
-  padding: .4375rem;
-  margin-block: 0.625rem;
+  width: 10.625rem;
+  padding: .5625rem;
+  margin-block: 2.5rem;
   margin-inline: auto;
   display: flex;
   flex-flow: column wrap;
   border-radius: 0.625rem;
   border: solid 3px black;
   position: relative;
-  gap: .3125rem;
+  gap: .4375rem;
 }
 .offer-card__img{
     width: 6.25rem;
@@ -146,6 +155,8 @@ footer {
 .title {
     display: flex;
     justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 .description {
     color: black; 
@@ -170,9 +181,15 @@ footer {
     text-decoration-color: #DB2540;
     display: inline;
     width: 100%;
+    margin-right: .5rem;
 }
-.offer-card-price-after,.offer-card-price-before {
-    
+
+.offer-card-price-after {
+    font-size: larger;
+}
+.prices{
+  row-gap: .625rem;
+  margin: auto;
 }
 .hello {
     margin: auto;
@@ -187,27 +204,53 @@ footer {
 }
 .offers-container {
   gap: 10px;
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
   width: 100%;
+  margin: auto;
 }
 
 .add-to-cart {
-  width: 6.25rem ;
+  width: fit-content ;
   background-color: #e7d107;
   border: solid #e7d107 0.125rem;
   border-radius: 0.625rem;
-  padding: 0.1875rem;
+  padding: .25rem;
   margin: auto;
   cursor: pointer;
-}
+  display: flex;
+  flex-wrap: wrap;
 
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: bold;
+}
 /* .recipe-img {
   width: 12.5rem;
   height: 12.5rem;
   position: absolute;
   left: 5.625rem;
 } */
-.offers {
+/*.offers {
     width: 100%;
+}*/
+.reviews-users {
+  background-color: white;
+  height: 100px;
+  
+  
 }
+.username {
+  font-weight: bold;
+  font-size: .8125rem;
+}
+/*.dropdown-menu {
+  display: block;
+ 
+  cursor: pointer
+}
+.dropdown-menu, #menu {
+  display: block;
+}*/

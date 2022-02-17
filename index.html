@@ -8,20 +8,32 @@
     <title>Boufright</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+        </style> 
 </head>
 
 <body>
 
     <header>
-        <img src="images/logoboufright.png" class="logo" alt="logo">
+        <a href="index.html"><img src="images/logoboufright.png" class="logo" alt="logo"></a>
         <div class="menu-button">
             <button id="menu">
                 <span class="iconify" data-icon="dashicons:menu" style="color: black; font-size: 90px;"></span>
                 <span class="menu-text">Menu</span>
             </button>
+            <!-- <div class="dropdown-menu">
+                <div>Offres du moment</div>
+                <div>A propos</div>
+                <div>S'abonner</div>
+            </div> --> 
         </div>
     </header>
 
+    <main>
+    <section class="filters-and-title">
+    <h1>Bon plans du jour</h1>
     <div class="regime">
         <button type="button" class="preferences">Vegan</button>
         <button type="button" class="preferences">Sans lactose</button>
@@ -29,11 +41,12 @@
         <button type="button" class="preferences">Végétarien</button>
         <button type="button" class="preferences">keto</button>
     </div>
+    </section>
 
-    <main>
-        <section class="offers">
+    
+        <!-- <section class="offers">
             <img src="images/CV(3).png" alt="sandwich" class="background-img">
-        </section>
+        </section> -->
 
         <div class="offers-container">
             <div class="offer-card1">
@@ -43,7 +56,7 @@
                 </div>
                 <div class="title"><strong>titre</strong></div>
                 <div class="description">Un plat à base de pates ijfeoijfioezjoezfiez </div>           
-                <div>
+                <div class="prices">
                     <span class="offer-card-price-before">8€</span>
                     <span class="offer-card-price-after">8€</span>            
                 </div> 
@@ -58,7 +71,7 @@
                 </div>                
                 <div class="title"><strong>titre </strong></div>
                 <div class="description">Un plat à base de pates et de légumes </div>                
-                <div>
+                <div class="prices">
                     <span class="offer-card-price-before">8€</span>
                     <span class="offer-card-price-after">8€</span>            
                 </div> 
@@ -73,7 +86,7 @@
                 </div>
                 <div class="title"><strong>titre </strong></div>
                 <div class="description">Un plat à base de pates </div>
-                <div>
+                <div class="prices">
                 <span class="offer-card-price-before">8€</span>
                 <span class="offer-card-price-after">8€</span>            
             </div>
@@ -88,7 +101,7 @@
                 </div>               
                 <div class="title"> <strong>titre </strong></div>
                 <div class="description">Un plat à base de pates </div>                
-                <div class="hello">
+                <div class="prices">
                     <span class="offer-card-price-before">8€</span>
                     <span class="offer-card-price-after">8€</span>            
                 </div>    
@@ -104,7 +117,7 @@
                  <span class="discount"></span>
                 <div class="title"><strong>titre</strong> </div>
                 <div class="description">Un plat à base de pates </div>                
-                <div>
+                <div class="prices">
                     <span class="offer-card-price-before">8€</span>
                     <span class="offer-card-price-after">8€</span>            
                 </div> 
@@ -113,10 +126,15 @@
             </div>
         </div>
 
-        <section>
-            <h3>Les avis de nos utilisateurs</h3>
-            <div class="profile-picture"></div>
-            <span class="review"></span>
+        <section class="reviews-users">
+            <h2>Les avis de nos utilisateurs</h2>
+            <div class="review">
+                <span class="username">Sandra C.</span>
+                <div class="quote">blalalalalaafnklelkzeeklzela</div>
+            <div class="profile-picture">
+                <img src="images/Ellipse 2.png" alt="profile-picture">
+            </div>
+            </div>
         </section>
     </main>
 
@@ -128,5 +146,5 @@
     </footer>
 </body>
 <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-
+<script src="index.js"></script>
 </html>
