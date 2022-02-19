@@ -4,22 +4,47 @@
 }
 body {
   background-image: url("images/CV(3).png");
+  background-size: cover;
   font-family: "Noto sans";
 }
 img {
   max-width: 100%;
 }
 
+
 .profile-picture{
   margin-right:.625rem
 }
-.quote, .profile-picture{
-  display: inline-block;
-  text-align: left;
+.quote{
+  font-size:x-small;
+}
+
+.reviews-users {
+  background-color: white;
+  height: max-content;
+  padding: .875rem;
+  padding-top: 1.25rem;
+}
+
+.wrapper {
+  display: flex;
+  /*width: fit-content;*/
+  margin: auto;
+
+}
+.review {
+  padding: .875rem;
+  padding-top: 1.25rem;
+  display: flex;
+  gap: 8px;
+  flex-flow: column wrap;
+  width: 100px;
+
 }
 .username {
-  display: flex;
-  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  width: 4.375rem
 }
 nav {
   display: inline-block;
@@ -74,12 +99,10 @@ h1 {
   margin-top: 0.625rem;
 }
 .menu-button {
-  
   justify-content: center;
   border-bottom: light 0.0625rem solid; 
   position: relative;
   display: inline-block;
-  
 }
 .dropdown-menu{
   display: none;
@@ -153,7 +176,6 @@ li:hover {
   height: 0.9375rem;
 }
 
-
 .arrow {
   float: right;
   transform: rotate(270deg);
@@ -163,21 +185,35 @@ li:hover {
 li {
   display:none
 }
+
+  .offers-container {
+  gap: 10px;
+  display: block;
+  /*display: flex;
+  justify-content: space-between;*/
+  width: 100%;
+  margin: auto;
+}
+
+
 .offer-card1,
 .offer-card2,
 .offer-card3,
 .offer-card4,
 .offer-card5 {
   background-color: white;
-  width: 10.625rem;
+  width: 11.25rem;
   padding: 0.5625rem;
   margin-block: 2.5rem;
   margin-inline: auto;
-  display: flex;
-  flex-flow: column wrap;
+  /*display: flex;
+  flex-flow: row wrap;*/
   border-radius: 0.625rem;
   position: relative;
-  gap: 0.4375rem;
+  gap: .625rem;
+  justify-content: center;
+  height: auto;
+  align-content: center;
 }
 .offer-card__img {
   width: 6.25rem;
@@ -186,12 +222,14 @@ li {
 .offer-card1__img img {
   max-width: 100%;
 }
+
 .title {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 }
+
 .description {
   color: black;
   font-size: 0.625rem;
@@ -223,7 +261,8 @@ li {
 }
 .prices {
   row-gap: 0.625rem;
-  margin: auto;
+  /*margin: auto;*/
+  margin-inline: calc(100% / 3) ;
 }
 .learn-more {
   font-size: 0.4375rem;
@@ -233,13 +272,7 @@ li {
   text-decoration: underline;
   cursor: pointer;
 }
-.offers-container {
-  gap: 10px;
-  /*display: flex;
-  justify-content: space-between;*/
-  width: 100%;
-  margin: auto;
-}
+
 footer {
   background-color: #6ba6ae;
   height: fit-content;
@@ -249,16 +282,26 @@ footer {
   flex-direction: column;
   gap: .5rem;
 }
-.allFooter{
+.footer-container{
   display: flex;
   flex-direction: row;
+  padding: 1.25rem
 }
-.footer1,.footer2,.footer3 {
+.footer1,.footer2 {
   color:#e7d107;
   display: flex;
   flex-direction: column;
   padding: .4375rem; 
   border-right: solid 1px white;
+  gap: .625rem;
+  width: calc(100% / 3);
+  align-items:flex-start;
+}
+.footer3{
+  color:#e7d107;
+  display: flex;
+  flex-direction: column;
+  padding: .4375rem; 
   gap: .625rem;
   width: calc(100% / 3);
   align-items:flex-start;
@@ -269,6 +312,7 @@ footer {
 .social-medias{
   display:flex;
   justify-content: center;
+  padding-bottom: .9375rem;
 }
 .social-medias:hover{
   cursor:pointer
@@ -293,8 +337,7 @@ footer {
   width: calc(100% / 3)
 }
 .footer3 {
-  /*grid-column:3;
-  grid-row: 2 / 5;*/
+ 
   width: calc(100% / 3)
 }
 .add-to-cart {
@@ -314,24 +357,4 @@ h2 {
   font-weight: bold;
   margin-bottom: 25px;
   margin-top: 25px;
-}
-.reviews-users {
-  background-color: white;
-  height: max-content;
-  padding: .875rem;
-  padding-top: 1.25rem;
-}
-.review {
-  padding: .875rem;
-  padding-top: 1.25rem;
-  margin-left: 0.625rem;
-  display: flex;
-  gap: 8px;
-}
-.username {
-  font-weight: bold;
-  font-size: 0.8125rem;
-  width: 4.375rem
-}
-
-
+  }
