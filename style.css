@@ -67,7 +67,7 @@ h1 {
   margin-bottom: 1.875rem;
   cursor: pointer;
   justify-content: right;
-  
+  margin-right: .625rem;
 }
 .menu-text {
   font-weight: 550;
@@ -79,6 +79,7 @@ h1 {
   border-bottom: light 0.0625rem solid; 
   position: relative;
   display: inline-block;
+  
 }
 .dropdown-menu{
   display: none;
@@ -87,14 +88,20 @@ h1 {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 2;
+  top: 1.875rem;
 }
+
 .dropdown-menu a {
   color: black;
-  padding: 12px 16px;
+  padding: 6px .9375rem;
   text-decoration: none;
   display: block;
 }
-
+.dropdown-menu a:hover{
+  text-decoration:underline;
+  text-decoration-color: #e7d107;
+  text-decoration-thickness: .125rem;
+}
 .menu-button:hover .dropdown-menu {display: block;}
 
 .menu:hover {
@@ -146,16 +153,7 @@ li:hover {
   height: 0.9375rem;
 }
 
-footer {
-  background-color: #6ba6ae;
-  height: fit-content;
-  padding: 1.25rem;
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);  
-  grid-gap: .0625rem;
-  grid-auto-rows: minmax(2.8125rem, auto);
-  column-gap:  auto;
-}
+
 .arrow {
   float: right;
   transform: rotate(270deg);
@@ -242,11 +240,38 @@ li {
   width: 100%;
   margin: auto;
 }
+footer {
+  background-color: #6ba6ae;
+  height: fit-content;
+  padding: 1.25rem;
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  gap: .5rem;
+}
+.allFooter{
+  display: flex;
+  flex-direction: row;
+}
 .footer1,.footer2,.footer3 {
   color:#e7d107;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: .4375rem; 
+  border-right: solid 1px white;
+  gap: .625rem;
+  width: calc(100% / 3);
+  align-items:flex-start;
+}
+.title-footer{
+  font-size:smaller;
+}
+.social-medias{
+  display:flex;
+  justify-content: center;
+}
+.social-medias:hover{
+  cursor:pointer
 }
 .footer1>p,.footer2>p,.footer3>p{
   font-size: .8125rem;
@@ -262,18 +287,15 @@ li {
   cursor: pointer;
 }
 .footer1{
-  grid-column: 1;
-  grid-row: 2 / 5;
-  border-right: solid .0625rem white;
+  width: calc(100% / 3)
 }
 .footer2{
-  grid-column: 2;
-  grid-row: 2 / 5;
-  border-right: solid .0625rem white;
+  width: calc(100% / 3)
 }
 .footer3 {
-  grid-column:3;
-  grid-row: 2 / 5;
+  /*grid-column:3;
+  grid-row: 2 / 5;*/
+  width: calc(100% / 3)
 }
 .add-to-cart {
   width: fit-content;
@@ -311,8 +333,5 @@ h2 {
   font-size: 0.8125rem;
   width: 4.375rem
 }
-.icon-appstore,.icon-google {
-  max-width: 60%;
-  height: 1.25rem;
-}
+
 
