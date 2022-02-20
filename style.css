@@ -58,10 +58,11 @@ img {
 .nav-desktop {
   display: none;
   margin-top: 7%;
+  margin-inline: .9375rem
 }
 .nav-desktop a,
 .nav-desktop button {
-  margin-right: 10px;
+  margin-right: 3.125rem;
   font-weight: 600 ;
 }
 .nav-desktop a{
