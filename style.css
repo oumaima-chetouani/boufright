@@ -403,6 +403,11 @@ h2 {
   margin-bottom: 25px;
   margin-top: 25px;
   }
-  h1{
-    font-size: ;
-  }
+
+.copyright {
+ color: white;
+ position: absolute;
+ /*right: 30px;*/
+ margin-left: 80%;
+ font-size: 11px;
+}
