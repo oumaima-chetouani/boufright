@@ -11,35 +11,37 @@ img {
   max-width: 100%;
 }
 
-@media  screen (min-width:900px){
-  .menu{
-    display: none;
+@media  only screen and (min-width:900px){
+  .logo {
+    height: 100px !important;
   }
-  .dropdown-menu{
-    display: inline-block;
+  .menu {
+
   }
-  .username,.quote{
-    flex-grow: 4;
+  nav {
+    height: 6.25rem;
+  }
+  .username,.quote {
+    font-size:larger !important;
   }
   .title-footer{
-      font-size: 1.125rem;
+      font-size: 110% !important;
   }
-.profile-picture{
-  margin-right:.625rem
-}
 .quote{
   font-size:x-small;
 }
-
-.offers-container{
-  justify-content: center;
-display: flex;
-gap: 30px;
-flex-flow: row wrap;
-}
 h1{
-  font-size: xx-large;
-}}
+  font-size: 230% !important;
+}
+h2{
+  font-size: 160% !important;
+
+}
+.dropdown-menu>a {
+  display: inline;
+}
+}
+
 
 .reviews-users {
   background-color: white;
@@ -62,6 +64,9 @@ h1{
   flex-flow: column wrap;
   width: 12.5rem;
   margin-left: 2.1875rem;
+}
+.review>span {
+  font-size: .9375rem !important
 }
 
 .username {
@@ -98,7 +103,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 150% !important;
 }
 .iconify {
   width: .9375rem;
@@ -400,8 +405,9 @@ h2 {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 1.5625rem !important;
+  margin-top: .9375rem !important;
+  font-size: 130% !important;
   }
 
 .copyright {
