@@ -8,10 +8,6 @@
     <title>Boufright</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'); */
-        </style> 
         <script defer src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
         <script defer src="index.js"></script>
 </head>
@@ -20,20 +16,30 @@
 
     <header>
         <a href="index.html"><img src="images/logoboufright.png" class="logo" alt="logo"></a>
-        <div class="menu-button" onclick="block()">
-            <nav>
+        <div class="menu-button">
+            <nav class="nav-mobile">
             
                 <button type="menu" class="menu">  
                 <span class="iconify" data-icon="dashicons:menu" style="color: black; font-size: 90px;"></span>
                 <span class="menu-text">Menu</span>
-            
                 </button> 
 
             <div class="dropdown-menu">
                 <a href="#">Offres du moment</a>
                 <a href="#">S'abonner</a>
                 <a href="#">A propos</a>
+                <a href="#">Connexion</a>
             </div>
+            
+            </nav>
+
+            <nav class="nav-desktop">
+                <a href="#" style="text-decoration: none; color: black;">Offres du moment</a>
+                <a href="#" style="text-decoration: none; color: black;">S'abonner</a>
+                <a href="#" style="text-decoration: none; color: black;">A propos</a>
+            <button type="button" class="connection-btn">
+                <span>Connexion</span>
+            </button>
             </nav>
         </div>
     </header>
@@ -62,7 +68,7 @@
                 <div class="description"> Salade à base de boulet, laitue, croutons... </div>           
                 <div class="prices">
                     <span class="offer-card-price-before">8€</span>
-                    <span class="offer-card-price-after">8€</span>            
+                    <span class="offer-card-price-after">5€</span>            
                 </div> 
             <a href="#"  style="text-decoration: none"><button class="add-to-cart">Ajouter au panier</button></a>
             <a href="#"  style="text-decoration: none"><div class="learn-more">Plus d'infos</div></a>
@@ -70,14 +76,14 @@
         </div>
             <div class="offer-card2">
                 <div class="content">
-                <div class="discount">-40%</div>                
+                <div class="discount">-30%</div>                
                 <div class="offer-card__img">
                     <img src="images/salad-gd2b70949d_1920-removebg-preview 1(1).png" alt="image" class="recipe-img" > 
                 </div>                
                 <div class="title"><strong>Salade d'avocat et de tomate </strong></div>
                 <div class="description">Sauce au choix</div>                
                 <div class="prices">
-                    <span class="offer-card-price-before">8€</span>
+                    <span class="offer-card-price-before">11€</span>
                     <span class="offer-card-price-after">8€</span>            
                 </div> 
                 <a href="#" style="text-decoration: none";><button class="add-to-cart">Ajouter au panier</button></a>
@@ -87,15 +93,15 @@
 
             <div class="offer-card3">
                 <div class="content">
-                <div class="discount">-40%</div>                
+                <div class="discount">-50%</div>                
                 <div class="offer-card__img">
                     <img src="images/salad-gd2b70949d_1920-removebg-preview 1(1).png" alt="image" class="recipe-img" > 
                 </div>
                 <div class="title"><strong>Riz au poulet </strong></div>
                 <div class="description">Un plat à base de riz et de poulet </div>
                 <div class="prices">
-                <span class="offer-card-price-before">8€</span>
-                <span class="offer-card-price-after">8€</span>            
+                <span class="offer-card-price-before">10€</span>
+                <span class="offer-card-price-after">5€</span>            
             </div>
                 <a href="#"  style="text-decoration: none"><button class="add-to-cart">Ajouter au panier</button></a>
                 <a href="#"  style="text-decoration: none"><div class="learn-more">Plus d'infos</div></a>
@@ -108,36 +114,36 @@
         <section class="reviews-users">
             <h2>Les avis de nos utilisateurs</h2>
            <div class="wrapper"> 
-            
-               <!-- <div class="review-container"> -->
                <div class="review">
                     <div>
-                        <img src="images/Ellipse 4.svg" alt="profile-picture" class="profile-picture">
+                        <img src="images/Ellipse 2.png" alt="profile-picture" class="profile-picture">
                     </div>
-                    <span class="username">Sandra C.</span>
-                    <span class="quote">"So helpful"</span>
+                    <span class="username">Cedric P.</span>
+                    <span class="quote">‘’Je trouve toujours
+                        mon bonheur sur
+                        ce site.’’</span>
                    </div>
                     <div class="review">
                         <div>
-                            <img src="images/Ellipse 4.svg" alt="profile-picture" class="profile-picture">
+                            <img src="images/Ellipse 3.png" alt="profile-picture" class="profile-picture">
                         </div>
-                        <span class="username">Harry.</span>
-                            <span class="quote">"Would definitely recommend"</span>
+                        <span class="username">Ylane B.</span>
+                            <span class="quote">“Pour des restaurants sains et pas cher c’est le must !”</span>
                             </div>
                     
                             <div class="review">
                                 <div>
-                                    <img src="images/Ellipse 4.svg" alt="profile-picture" class="profile-picture">
+                                    <img src="images/Ellipse 4.png" alt="profile-picture" class="profile-picture">
                                 </div>
-                                <span class="username">Julian</span>
-                                    <span class="quote">"Love it, useful too"</span>
+                                <span class="username">Jean F.</span>
+                                    <span class="quote">‘’Je suis très satisfait des plats que j’ai acheté sur Bouf’right’’</span>
                                 </div>
                                 <div class="review">
                                     <div>
-                                        <img src="images/Ellipse 4.svg" alt="profile-picture" class="profile-picture">
+                                        <img src="images/Ellipse 5.png" alt="profile-picture" class="profile-picture">
                                     </div>
-                                    <span class="username">Julian</span>
-                                        <span class="quote">"Healthy and tasty"</span>
+                                    <span class="username">Sarah B.</span>
+                                        <span class="quote">‘’Il y a tout ce qu’il me faut sur Bouf’Right !’’</span>
                                     </div>
                                     
                                 </div>            
