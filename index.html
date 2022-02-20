@@ -20,11 +20,13 @@
 
     <header>
         <a href="index.html"><img src="images/logoboufright.png" class="logo" alt="logo"></a>
-        <div class="menu-button">
+        <div class="menu-button" onclick="block()">
             <nav>
-                <button type="menu" class="menu"> 
+            
+                <button type="menu" class="menu">  
                 <span class="iconify" data-icon="dashicons:menu" style="color: black; font-size: 90px;"></span>
                 <span class="menu-text">Menu</span>
+            
                 </button> 
 
             <div class="dropdown-menu">
@@ -35,7 +37,7 @@
             </nav>
         </div>
     </header>
-
+    
     <main>
     <section class="filters-and-title">
     <h1>Bon plans du jour</h1>
@@ -48,14 +50,16 @@
     </div>
     </section>
 
-        <div class="offers-container">
+        <section class="offers-wrapper">
+            <div class="offers-container">
             <div class="offer-card1">
+                <div class="content">
                 <div class="discount">-40%</div>
                 <div class="offer-card__img">
                     <img src="images/salad-gd2b70949d_1920-removebg-preview 1(1).png" alt="image" class="recipe-img" > 
                 </div>
-                <div class="title"><strong>titre</strong></div>
-                <div class="description">Un plat à base de pates ijfeoijfioezjoezfiez </div>           
+                <div class="title"><strong>Salade César</strong></div>
+                <div class="description"> Salade à base de boulet, laitue, croutons... </div>           
                 <div class="prices">
                     <span class="offer-card-price-before">8€</span>
                     <span class="offer-card-price-after">8€</span>            
@@ -63,14 +67,15 @@
             <a href="#"  style="text-decoration: none"><button class="add-to-cart">Ajouter au panier</button></a>
             <a href="#"  style="text-decoration: none"><div class="learn-more">Plus d'infos</div></a>
             </div>
-
+        </div>
             <div class="offer-card2">
+                <div class="content">
                 <div class="discount">-40%</div>                
                 <div class="offer-card__img">
                     <img src="images/salad-gd2b70949d_1920-removebg-preview 1(1).png" alt="image" class="recipe-img" > 
                 </div>                
-                <div class="title"><strong>titre </strong></div>
-                <div class="description">Un plat à base de pates et de légumes </div>                
+                <div class="title"><strong>Salade d'avocat et de tomate </strong></div>
+                <div class="description">Sauce au choix</div>                
                 <div class="prices">
                     <span class="offer-card-price-before">8€</span>
                     <span class="offer-card-price-after">8€</span>            
@@ -78,14 +83,16 @@
                 <a href="#" style="text-decoration: none";><button class="add-to-cart">Ajouter au panier</button></a>
                 <a href="#"  style="text-decoration: none"><div class="learn-more">Plus d'infos</div></a>
             </div>
+        </div>
 
             <div class="offer-card3">
+                <div class="content">
                 <div class="discount">-40%</div>                
                 <div class="offer-card__img">
                     <img src="images/salad-gd2b70949d_1920-removebg-preview 1(1).png" alt="image" class="recipe-img" > 
                 </div>
-                <div class="title"><strong>titre </strong></div>
-                <div class="description">Un plat à base de pates </div>
+                <div class="title"><strong>Riz au poulet </strong></div>
+                <div class="description">Un plat à base de riz et de poulet </div>
                 <div class="prices">
                 <span class="offer-card-price-before">8€</span>
                 <span class="offer-card-price-after">8€</span>            
@@ -93,43 +100,17 @@
                 <a href="#"  style="text-decoration: none"><button class="add-to-cart">Ajouter au panier</button></a>
                 <a href="#"  style="text-decoration: none"><div class="learn-more">Plus d'infos</div></a>
             </div>
-
-            <div class="offer-card4">
-                <div class="discount">-40%</div>                
-                <div class="offer-card__img">
-                    <img src="images/salad-gd2b70949d_1920-removebg-preview 1(1).png" alt="image" class="recipe-img" > 
-                </div>               
-                <div class="title"><span> <strong>titre </span></strong></div>
-                <div class="description"><span>Un plat à base de pates </span></div>                
-                <div class="prices">
-                    <span class="offer-card-price-before">8€</span>
-                    <span class="offer-card-price-after">8€</span>            
-                </div>    
-                <button class="add-to-cart">Ajouter au panier</button>
-                <div class="learn-more">Plus d'infos</div>
-            </div>
-
-            <div class="offer-card5">
-                <div class="discount">-40%</div>                
-                <div class="offer-card__img">
-                    <img src="images/salad-gd2b70949d_1920-removebg-preview 1(1).png" alt="image" class="recipe-img" > 
-                </div>               
-                 <span class="discount"></span>
-                <div class="title"><strong>titre</strong></div>
-                <div class="description">Un plat à base de pates </div>                
-                <div class="prices">
-                    <span class="offer-card-price-before">8€</span>
-                    <span class="offer-card-price-after">8€</span>            
-                </div> 
-                <button class="add-to-cart">Ajouter au panier</button>
-                <div class="learn-more">Plus d'infos</div>
-            </div>
         </div>
-
+        
+        </div>
+        </section>
+    </div>
         <section class="reviews-users">
             <h2>Les avis de nos utilisateurs</h2>
-            <div class="wrapper">
-            <div class="review">
+           <div class="wrapper"> 
+            
+               <!-- <div class="review-container"> -->
+               <div class="review">
                     <div>
                         <img src="images/Ellipse 4.svg" alt="profile-picture" class="profile-picture">
                     </div>
@@ -159,7 +140,7 @@
                                         <span class="quote">"Love it, useful too"</span>
                                     </div>
                                     
-                               
+                                </div>            
             </div>
         </div>
         </section>
